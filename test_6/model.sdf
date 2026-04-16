@@ -1,0 +1,471 @@
+<?xml version="1.0" ?>
+<sdf version="1.11">
+  <model name="test_v7">
+    <link name="base_link">
+      <inertial>
+        <mass>0.0001</mass>
+        <inertia>
+          <ixx>1e-09</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-09</iyy>
+          <iyz>0</iyz>
+          <izz>1e-09</izz>
+        </inertia>
+      </inertial>
+    </link>
+    <link name="base_link_1">
+      <inertial>
+        <pose>-0.006003070239091151 0.004674496431452058 -0.028233711884857057 0.0 -0.0 0.0</pose>
+        <mass>18.042889875355606</mass>
+        <inertia>
+          <ixx>0.32440273261796404</ixx>
+          <ixy>0.008885205922189693</ixy>
+          <ixz>-0.02922011000023445</ixz>
+          <iyy>0.3314487164427661</iyy>
+          <iyz>0.02295002069471524</iyz>
+          <izz>0.32271939533932287</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__body1_collision">
+        <pose relative_to="__model__">-0.011093384856898965 0.0 -0.018000000000000002 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.07600000000000001 0.3 0.32218676971379795</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_a_1">
+      <pose relative_to="__model__">0.0814330700157758 0.04701739966892985 -0.015591272532809205 -1.9972275391609096 6.511982082116048e-17 -1.0471975511965983</pose>
+      <inertial>
+        <pose>-0.034561370372242384 0.1131097599215081 0.17371262320711608 2.308352009621695 -0.9083188421056868 -0.6216601231088564</pose>
+        <mass>0.5295834259959955</mass>
+        <inertia>
+          <ixx>0.010106684200346501</ixx>
+          <ixy>-0.0008924610461276596</ixy>
+          <ixz>-0.005906382607940689</ixz>
+          <iyy>0.01613180412087601</iyy>
+          <iyz>0.0002624226121057376</iyz>
+          <izz>0.00782340454827245</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_a_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_a_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_a_1__body1_collision">
+        <pose relative_to="__model__">0.21424234282929158 0.10489763530089298 -0.07875696493056726 -3.007881143079345 -1.1276749179351533 0.8170661562990996</pose>
+        <geometry>
+          <box>
+            <size>0.019999999999999997 0.08868332403876587 0.27027085362224523</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_a_1__second_link_a_1">
+      <pose relative_to="__model__">-0.10290090997842143 0.06792782431931448 -0.4898391177689064 -0.25767012141722895 -0.03234384727327745 1.7652724581532457</pose>
+      <inertial>
+        <pose>4.252839792134866e-09 -0.281928808198703 0.13052977998059853 -0.08251161845466903 0.24646921532617458 -1.7713076571243385</pose>
+        <mass>0.1360043182050376</mass>
+        <inertia>
+          <ixx>0.0016541566286163625</ixx>
+          <ixy>-0.0003775806899707331</ixy>
+          <ixz>-0.0018820979831205916</ixz>
+          <iyy>0.003822382296894347</iyy>
+          <iyz>-0.00031838039889015447</iyz>
+          <izz>0.002299437313748748</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_a_1__second_link_a_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_a_1/second_link_a_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_a_1__second_link_a_1__body1_collision">
+        <pose relative_to="__model__">0.13434167333342242 0.10748770751677837 -0.2931696536228003 -0.5082270942593149 -0.7498464901973657 2.6239906160661315</pose>
+        <geometry>
+          <box>
+            <size>0.015016926864274114 0.01867045413683474 0.5199999995937753</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_a_1__third_link_a_1">
+      <pose relative_to="__model__">-0.13681070064014977 0.1382400812810502 -0.4847040849383448 -0.5546659991931527 0.1974815462895607 1.571249311954269</pose>
+      <inertial>
+        <pose>0.0008479311017124364 -0.29899464490655275 0.04687057432560915 0.1972063219991525 0.5547548139625224 -1.571318874304955</pose>
+        <mass>0.1360044634313697</mass>
+        <inertia>
+          <ixx>0.0016541197031250468</ixx>
+          <ixy>-0.00037758996911224467</ixy>
+          <ixz>-0.0018820522722858982</ixz>
+          <iyy>0.0038224764546560767</iyy>
+          <iyz>-0.0003183882744407498</iyz>
+          <izz>0.002299384723911271</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_a_1__third_link_a_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_a_1/third_link_a_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_a_1__third_link_a_1__body1_collision">
+        <pose relative_to="__model__">0.09309086222621349 0.17940866553748827 -0.2922157314928216 -0.7029322318516242 -0.5773510969378399 2.310630356594817</pose>
+        <geometry>
+          <box>
+            <size>0.0186602540381762 0.015000000006424298 0.5199999999999999</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_b_1">
+      <pose relative_to="__model__">1.7275252917504574e-06 -0.09517889837212534 -0.013326122178319405 3.141592653589793 1.059705165933835 1.5707963267948963</pose>
+      <inertial>
+        <pose>0.11538675872842376 -0.029759020063236764 0.17587590768321873 -2.0818874876559583 1.2461267478887538e-16 1.5707963267948966</pose>
+        <mass>0.5295882688124655</mass>
+        <inertia>
+          <ixx>0.015823405859530584</ixx>
+          <ixy>0.002068865926200475</ixy>
+          <ixz>-0.0026640308168478202</ixz>
+          <iyy>0.010241597950927675</iyy>
+          <iyz>0.005314068298323562</iyz>
+          <izz>0.008266050309257044</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_b_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_b_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_b_1__body1_collision">
+        <pose relative_to="__model__">-0.016277545741039744 -0.23128791878975088 -0.0919880393505575 1.2203192557105937 -1.0460997572576454 -1.8209974497003067</pose>
+        <geometry>
+          <box>
+            <size>0.020000000000000035 0.2702707998916673 0.08868323335190396</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_b_1__second_link_b_1">
+      <pose relative_to="__model__">-0.1644296641251588 0.0711042196270732 -0.4732785466038213 -2.5094293361301996 0.3548445462903266 1.5893327420535173</pose>
+      <inertial>
+        <pose>-0.2668044542208931 -0.0008479311016837097 -0.10563707333385755 -2.7741338498179275 0.6256131464513811 1.5922395198894326</pose>
+        <mass>0.13600446342896286</mass>
+        <inertia>
+          <ixx>0.0036778053063580667</ixx>
+          <ixy>0.0006878803540676561</ixy>
+          <ixz>-0.0005413018798880072</ixz>
+          <iyy>0.001616875078238959</iyy>
+          <iyz>0.001785633942526242</iyz>
+          <izz>0.0024813004967933283</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_b_1__second_link_b_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_b_1/second_link_b_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_b_1__second_link_b_1__body1_collision">
+        <pose relative_to="__model__">-0.10031844578235759 -0.14821015797530962 -0.2996655797954941 -1.8799348774579752 -0.8873540541418109 1.4744021346994853</pose>
+        <geometry>
+          <box>
+            <size>0.018660254036797143 0.5199999999999999 0.014999999999450769</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_b_1__third_link_b_1">
+      <pose relative_to="__model__">-0.08442966412515933 0.07110421962707213 -0.47327854660382057 1.0844884013145482 0.8724940906474498 2.2847173624763757</pose>
+      <inertial>
+        <pose>-0.266804454220893 -0.0008479311016839526 -0.10563707333385783 1.230797880511589 -0.44867905623213933 -2.056951957213915</pose>
+        <mass>0.1360044634289624</mass>
+        <inertia>
+          <ixx>0.0036778031388118495</ixx>
+          <ixy>0.0006878794084599032</ixy>
+          <ixz>-0.0005413022466652769</ixz>
+          <iyy>0.0016168756760061315</iyy>
+          <iyz>0.0017856350665119997</iyz>
+          <izz>0.0024813020665724905</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_b_1__third_link_b_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_b_1/third_link_b_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_b_1__third_link_b_1__body1_collision">
+        <pose relative_to="__model__">-0.01556641572207302 -0.1483785098570766 -0.30171021834341305 -1.908990582595981 -0.8793506755443475 1.4368096862017126</pose>
+        <geometry>
+          <box>
+            <size>0.018660254036797146 0.52 0.01499999999945073</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_c_1">
+      <pose relative_to="__model__">-0.07950925149641275 0.04590269298013458 -0.033251088548263474 1.3948537048587655 -7.261497949941477e-18 -2.094395102393199</pose>
+      <inertial>
+        <pose>-0.011306429528835687 -0.25526525236172015 0.07220506682655758 1.2291753476373444 1.021047325719095 2.847228553252102</pose>
+        <mass>1.020041076680199</mass>
+        <inertia>
+          <ixx>0.04230979697218576</ixx>
+          <ixy>0.002351458479355868</ixy>
+          <ixz>0.011545648920689357</ixz>
+          <iyy>0.04614223222284844</iyy>
+          <iyz>-0.004775803306886518</iyz>
+          <izz>0.007528464595276681</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_c_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_c_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_c_1__body1_collision">
+        <pose relative_to="__model__">-0.22198741345563733 0.10936526490093114 -0.007740216102172539 2.6652446431952668 -1.355718373638851 -1.1437286292456499</pose>
+        <geometry>
+          <box>
+            <size>0.020000000000000004 0.08868332403876586 0.27027085362224523</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_c_1__second_link_c_1">
+      <pose relative_to="__model__">-0.11745051890632335 0.13718417138512634 -0.5007131570297239 1.237543705597859 -0.33146568557327727 0.03613542748632826</pose>
+      <inertial>
+        <pose>0.0008479311017121219 0.298613426494049 0.0525170938613711 -1.2554743901405772 0.07230746496770671 -0.3257069062410521</pose>
+        <mass>0.1360044634313699</mass>
+        <inertia>
+          <ixx>0.0034715764399213585</ixx>
+          <ixy>0.0001862746422086432</ixy>
+          <ixz>0.0011848350121814863</ixz>
+          <iyy>0.0038026015476413204</iyy>
+          <iyz>-0.0005320941011110348</iyz>
+          <izz>0.0005018028941306853</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_c_1__second_link_c_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_c_1/second_link_c_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_c_1__second_link_c_1__body1_collision">
+        <pose relative_to="__model__">-0.21417181452142983 0.18243498765238414 -0.21693141526033763 -0.9551614222782706 -1.2043727797034662 2.719487919714793</pose>
+        <geometry>
+          <box>
+            <size>0.5199999999999999 0.01866025403774039 0.014999999999997973</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_c_1__third_link_c_1">
+      <pose relative_to="__model__">-0.17483679264433835 0.07571030418233855 -0.45104826836394835 1.2232600244410605 0.11855696525440695 1.464300509209502</pose>
+      <inertial>
+        <pose>0.013655278621398882 0.04679088097423678 0.04504026029728253 -0.17525487186113486 -1.2202056302590631 -1.2584251034286984</pose>
+        <mass>0.626457271294289</mass>
+        <inertia>
+          <ixx>0.009284865555687902</ixx>
+          <ixy>0.0005663817458824542</ixy>
+          <ixz>0.004550099585425071</ixz>
+          <iyy>0.011652007597582753</iyy>
+          <iyz>-0.0011398997396540288</iyz>
+          <izz>0.0031561182193377696</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_c_1__third_link_c_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_c_1/third_link_c_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_c_1__third_link_c_1__body1_collision">
+        <pose relative_to="__model__">-0.25691007380074204 0.11491383213076817 -0.21816684221229113 -0.8600426645351987 -1.204372779703659 2.719487919715912</pose>
+        <geometry>
+          <box>
+            <size>0.5200000000000001 0.015000000000745925 0.018660254040500774</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <link name="base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1">
+      <pose relative_to="__model__">-0.09072004033361221 0.05472580097296643 -0.45954826836394685 4.8583460987361774e-15 -6.383223185661669e-16 -2.460860982333916e-15</pose>
+      <inertial>
+        <pose>-0.02514560914041382 0.03312539972609821 0.01699582427331018 -4.858346098736176e-15 6.383223185661788e-16 2.460860982333913e-15</pose>
+        <mass>0.4904528078629193</mass>
+        <inertia>
+          <ixx>0.000363507214913128</ixx>
+          <ixy>5.377642775528102e-17</ixy>
+          <ixz>2.7755575615628914e-17</ixz>
+          <iyy>0.0003635094374573322</iyy>
+          <iyz>-5.057167462574341e-10</iyz>
+          <izz>0.0004810943348778178</izz>
+        </inertia>
+      </inertial>
+      <visual name="base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1__body1_visual">
+        <geometry>
+          <mesh>
+            <scale>0.01 0.01 0.01</scale>
+            <uri>meshes/base_link_1/first_link_c_1/third_link_c_1/fourth_link_v2_1/body1_visual.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <collision name="base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1__body1_collision">
+        <pose relative_to="__model__">-0.11586564947403966 0.0939218284094051 -0.44104826836394667 -0.0 -1.5707963267948966 0</pose>
+        <geometry>
+          <box>
+            <size>0.056999999999999815 0.1121410161513775 0.1279422863405995</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="base_link_1__first_link_a_1__ball_2" type="fixed">
+      <pose relative_to="__model__">0.3222049061173267 0.13983906252027506 -0.13140606549323497 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_a_1</parent>
+      <child>base_link_1__first_link_a_1__second_link_a_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__first_link_a_1__ball_3" type="fixed">
+      <pose relative_to="__model__">0.2822049061173264 0.20912109482303073 -0.131406065493235 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_a_1</parent>
+      <child>base_link_1__first_link_a_1__third_link_a_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__first_link_b_1__ball_1" type="fixed">
+      <pose relative_to="__model__">-0.03999827247470824 -0.3393980646926756 -0.15028231518067162 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_b_1</parent>
+      <child>base_link_1__first_link_b_1__second_link_b_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__first_link_b_1__ball_2" type="fixed">
+      <pose relative_to="__model__">0.04000172752529176 -0.3393980646926756 -0.15028231518067162 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_b_1</parent>
+      <child>base_link_1__first_link_b_1__third_link_b_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__first_link_c_1__third_link_c_1__ball_2" type="fixed">
+      <pose relative_to="__model__">-0.17483679264433843 0.07571030418233855 -0.45104826836394835 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_c_1__third_link_c_1</parent>
+      <child>base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__first_link_c_1__ball_1" type="fixed">
+      <pose relative_to="__model__">-0.29825284813898234 0.218382388920403 0.015759071991919744 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_c_1</parent>
+      <child>base_link_1__first_link_c_1__second_link_c_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__first_link_c_1__ball_2" type="fixed">
+      <pose relative_to="__model__">-0.33825284813898293 0.14910035661764742 0.015759071991919744 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_c_1</parent>
+      <child>base_link_1__first_link_c_1__third_link_c_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__first_link_c_1__ball_3" type="fixed">
+      <pose relative_to="__model__">-0.13483679264433862 0.14499233648509358 -0.4510482683639465 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_c_1__second_link_c_1</parent>
+      <child>base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__revolute_1" type="revolute">
+      <pose relative_to="__model__">0.11008805840783363 0.052012364772533515 -0.028000000000000004 0.0 -0.0 0.0</pose>
+      <parent>base_link_1</parent>
+      <child>base_link_1__first_link_a_1</child>
+      <axis>
+        <xyz expressed_in="__model__">0.5000000000000003 -0.8660254037844385 0.0</xyz>
+        <limit>
+          <lower>3.141592653589793</lower>
+          <upper>5.1487212933832724</upper>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="base_link_1__revolute_2" type="revolute">
+      <pose relative_to="__model__">-0.01 -0.12134523762075573 -0.028000000000000004 0.0 -0.0 0.0</pose>
+      <parent>base_link_1</parent>
+      <child>base_link_1__first_link_b_1</child>
+      <axis>
+        <xyz expressed_in="__model__">-1.0 0.0 0.0</xyz>
+        <limit>
+          <lower>-3.141592653589793</lower>
+          <upper>-1.1344640137963142</upper>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="base_link_1__revolute_3" type="revolute">
+      <pose relative_to="__model__">-0.10008805840783364 0.0693328728482222 -0.028000000000000004 0.0 -0.0 0.0</pose>
+      <parent>base_link_1</parent>
+      <child>base_link_1__first_link_c_1</child>
+      <axis>
+        <xyz expressed_in="__model__">0.4999999999999996 0.8660254037844389 0.0</xyz>
+        <limit>
+          <lower>-3.141592653589793</lower>
+          <upper>-1.1344640137963142</upper>
+        </limit>
+      </axis>
+    </joint>
+    <joint name="base_link_1__ball_5" type="fixed">
+      <pose relative_to="__model__">-0.09689450630373944 0.14499233648509333 -0.4510482683639463 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_a_1__third_link_a_1</parent>
+      <child>base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__ball_6" type="fixed">
+      <pose relative_to="__model__">-0.05689450630374032 0.07571030418233848 -0.4510482683639468 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_a_1__second_link_a_1</parent>
+      <child>base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__ball_7" type="fixed">
+      <pose relative_to="__model__">-0.1558656494740391 0.042851320333716476 -0.45104826836394707 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_b_1__second_link_b_1</parent>
+      <child>base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_1__ball_8" type="fixed">
+      <pose relative_to="__model__">-0.07586564947403965 0.042851320333715505 -0.45104826836394646 0.0 -0.0 0.0</pose>
+      <parent>base_link_1__first_link_b_1__third_link_b_1</parent>
+      <child>base_link_1__first_link_c_1__third_link_c_1__fourth_link_v2_1</child>
+      <axis/>
+    </joint>
+    <joint name="base_link_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>base_link_1</child>
+      <axis/>
+    </joint>
+  </model>
+</sdf>
