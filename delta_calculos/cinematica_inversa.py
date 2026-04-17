@@ -1,5 +1,4 @@
 import numpy as np
-from delta_calculations.constants import LADO_BASE
 
 
 # Codigo para termino comun de la ecuacion
@@ -13,12 +12,10 @@ def joint_theta(a, b, y1, rf):
 
     second_term = ((y1 - a * b) - sqrt_term) / (b**2 + 1)
 
-    third_term = a + b * ((y1 - a * b) - sqrt_term) / (b**2 + 1)
+    third_term = a + b * second_term
 
-    yF1 = -((LADO_BASE) / (2 * np.sqrt(3)))
+    J1 = [0, second_term, third_term]
 
-    j1 = np.array([0.0, second_term, third_term])
-
-    theta = np.arctan((a + b * (y * j1)) / yF1 - y * j1)
+    theta = np.arctan
 
     return theta
