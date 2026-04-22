@@ -4,7 +4,7 @@ import numpy as np
 # Genera theta para un brazo
 def theta_function(f, rf, re, e, x0, y0, z0):
     # Raiz cuadrada de 3
-    rc3 = 1.73205080757
+    rc3 = np.sqrt(3)
 
     # Posicion del motor
     y1 = (-f) / (2 * rc3)
@@ -31,7 +31,7 @@ def theta_function(f, rf, re, e, x0, y0, z0):
 
 # Rotacion de theta en 120 y 240 grados
 def inverse_kinematics(f, rf, re, e, x0, y0, z0):
-    sen120 = 0.86602540378
+    sen120 = np.sqrt(3) / 2.0
     # para brazo 1 (0)
     # para brazo 2 (120)
     x120 = x0 * -0.5 + y0 * sen120
