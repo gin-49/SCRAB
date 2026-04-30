@@ -15,7 +15,7 @@ theta3 = -19.928
 # Coordenadas para probar
 x0 = -9
 y0 = 14
-z0 = -315
+z0 = -300
 
 
 # Parametros del Robot
@@ -26,10 +26,12 @@ e = 25  # end effector
 
 # cinematica direct
 dk = direct_kinematics(f, rf, re, e, theta1, theta2, theta3)
+print("---DIRECT KINEMATICS---")
 print(f"angles: {theta1}, {theta2}, {theta3}")
 print(f"coords: \n x0: {dk[0]}\n y0: {dk[1]}\n z0: {dk[2]}")
 
 # cinematica inversa
 ik = inverse_kinematics(f, rf, re, e, x0, y0, z0)
+print("---INVERSE KINEMATICS---")
 print(f"coordenadas: {x0}, {y0}, {z0}")
 print(f"angles: \n motor1: {ik[0]}\n motor2: {ik[1]}\n motor3: {ik[2]}")
