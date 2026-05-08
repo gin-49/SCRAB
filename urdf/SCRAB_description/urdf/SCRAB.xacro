@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<robot name="SCRAB" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find SCRAB_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find SCRAB_description)/urdf/SCRAB.trans" />
+<xacro:include filename="$(find SCRAB_description)/urdf/SCRAB.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.009486366114388127 -0.005381615869041012 0.7236298129248437" rpy="0 0 0"/>
+    <mass value="6.957372489287497"/>
+    <inertia ixx="0.351652" iyy="0.357154" izz="0.21618" ixy="0.004721" iyz="-0.022224" ixz="0.03918"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://SCRAB_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://SCRAB_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+</robot>
