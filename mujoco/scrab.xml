@@ -1,0 +1,83 @@
+<mujoco model="scrab">
+  <option gravity="0 0 -9.81" timestep="0.002" integrator="implicitfast" />
+  <default>
+    <geom rgba=".8 .6 .4 1" />
+    <joint damping="0.5" armature="0.05" />
+  </default>
+
+
+  <worldbody>
+    <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1" />
+
+    <!-- end effector -->
+    <body name="end_effector" pos="0 0 0.18" euler="0 0 0">
+      <geom type="cylinder" size="0.08 0.002" rgba="1 1 1 1" />
+      <joint name="end_effector_free" type="free" />
+    </body>
+
+    <!-- body del robot -->
+    <body pos="0 0 0">
+      <geom name="base" type="cylinder" size="0.2 0.002" pos="0 0 0.5" rgba="1 1 1 1" />
+
+
+      <!-- brazo 1 -->
+      <body name="bicep1_base" pos="0.3 0 0.5" euler="0 0 0">
+        <body name="bicep1" euler="0 90 0">
+          <joint name="bicep_joint1" type="hinge" pos="0 0 -0.1" axis="0 -1 0" />
+          <geom type="capsule" size="0.005 0.1" rgba="1 0 0 1" />
+          <body name="antebrazo1" pos="0.159 0 -0.059" euler="0 -45 0">
+            <joint name="virtual_joint1" type="hinge" pos="0 0 0.225" axis="0 -1 0" />
+            <geom type="capsule" size="0.005 0.225" rgba="0 1 0 1" />
+
+            <geom type="sphere" size="0.01" pos="0 0 -0.225" rgba="1 0 0 1" />
+          </body>
+        </body>
+      </body>
+
+
+      <!-- brazo 2 -->
+      <body name="bicep2_base" pos="-0.15 0.259808 0.5" euler="0 0 120">
+        <body name="bicep2" euler="0 90 0">
+          <joint name="bicep_joint2" type="hinge" pos="0 0 -0.1" axis="0 -1 0" />
+          <geom type="capsule" size="0.005 0.1" rgba="1 0 0 1" />
+          <body name="antebrazo2" pos="0.159 0 -0.059" euler="0 -45 0">
+            <joint name="virtual_joint2" type="hinge" pos="0 0 0.225" axis="0 -1 0" />
+            <geom type="capsule" size="0.005 0.225" rgba="0 1 0 1" />
+            <geom type="sphere" size="0.01" pos="0 0 -0.225" rgba="1 0 0 1" />
+          </body>
+        </body>
+      </body>
+
+      <!-- brazo 3 -->
+      <body name="bicep3_base" pos="-0.15 -0.259808 0.5" euler="0 0 240">
+        <body name="bicep3" euler="0 90 0">
+          <joint name="bicep_joint3" type="hinge" pos="0 0 -0.1" axis="0 -1 0" />
+          <geom type="capsule" size="0.005 0.1" rgba="1 0 0 1" />
+          <body name="antebrazo3" pos="0.159 0 -0.059" euler="0 -45 0">
+            <joint name="virtual_joint3" type="hinge" pos="0 0 0.225" axis="0 -1 0" />
+            <geom type="capsule" size="0.005 0.225" rgba="0 1 0 1" />
+            <geom type="sphere" size="0.01" pos="0 0 -0.225" rgba="1 0 0 1" />
+          </body>
+        </body>
+      </body>
+
+    </body>
+  </worldbody>
+
+  <actuator>
+    <position name="actuador1" joint="bicep_joint1" kp="2" ctrlrange="-1.57 1.1" />
+    <position name="actuador2" joint="bicep_joint2" kp="2" ctrlrange="-1.57 1.1" />
+    <position name="actuador3" joint="bicep_joint3" kp="2" ctrlrange="-1.57 1.1" />
+  </actuator>
+
+
+  <equality>
+    <connect body1="antebrazo1" body2="end_effector" anchor="0 0 -0.225"
+      solref="0.01 1" solimp="0.999 0.9999 0.001" />
+    <connect body1="antebrazo2" body2="end_effector" anchor="0 0 -0.225"
+      solref="0.01 1" solimp="0.999 0.9999 0.001" />
+    <connect body1="antebrazo3" body2="end_effector" anchor="0 0 -0.225"
+      solref="0.01 1" solimp="0.999 0.9999 0.001" />
+  </equality>
+
+</mujoco>
